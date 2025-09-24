@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+      <h1 id="hone">STUDENT REGISTRATION FORM</h1>
+      <h3 id="htwo">for student training program</h3>
+    </div>
+
+  <form action="save.php" method="post">
+     
+    <div class="container">
+      <b>* Student Information:</b>
+    
+        <input type ="text" name="FirstName"  placeholder ="First Name " size="30" required>
+      
+        <input type="text" name="LastName" placeholder ="Last Name" size="30" required>
+   
+      <p>
+        <b>* Date of Birth:</b>
+        <select name required="Month">
+        <option value="january">month </option>
+        <option value="january"> january </option>
+        <option value="february"> february </option>
+        <option value="march">  march</option>
+        <option value="april"> april </option>
+        <option value="may"> may </option>
+        <option value="june">june  </option>
+        <option value="july"> july </option>
+        <option value="august"> august </option>
+        <option value="september">september  </option>
+        <option value="october">  october</option>
+        <option value="november"> november </option>
+        <option value="december"> december </option>  
+      </select>
+
+      <select name required="Date">
+        <option value="date">date </option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3">  3</option>
+        <option value="4"> 4 </option>
+        <option value="5">5  </option>
+        <option value="6"> 6 </option>
+        <option value="7"> 7 </option>
+        <option value="8">8  </option>
+        <option value="9">  9</option>
+        <option value="10"> 10 </option>
+        <option value="11"> 11 </option>
+        <option value="12"> 12 </option>
+        <option value="13"> 13 </option>
+        <option value="14"> 14 </option>
+        <option value="15"> 15 </option>
+        <option value="16"> 16 </option>
+        <option value="17"> 17 </option>
+        <option value="18"> 18 </option>
+        <option value="19"> 19 </option>
+        <option value="20"> 20 </option>
+        <option value="21"> 21 </option>
+        <option value="22"> 22 </option>
+        <option value="23"> 23 </option>
+        <option value="24"> 24 </option>
+        <option value="25"> 25 </option>
+        <option value="26"> 26 </option>
+        <option value="27"> 27 </option>
+        <option value="28"> 28 </option>
+        <option value="29"> 29 </option>
+        <option value="30"> 30 </option>
+        <option value="31"> 31 </option>
+     </select>
+
+     <select name required="year">
+        <option value="">year</option>
+        <option value=""> 2000</option>
+        <option value=""> 2001</option>
+        <option value=""> 2002</option>
+        <option value=""> 2003</option>
+        <option value=""> 2004</option>
+        <option value=""> 2005</option>
+        <option value=""> 2006</option>
+        <option value=""> 2007</option>
+        <option value=""> 2008</option>
+        <option value=""> 2009</option>
+        <option value=""> 2010</option>
+    </select><br>
+    </p>
+
+
+    <p>
+       <b>* Student Id :</b>
+         <input type="text" name="StudentId" placeholder =" " size="60" required><br>
+    </p>
+
+
+    <p><b>* Gender:</b>
+      <label form="101">
+         <input type="radio" name ="Gender" value="male" id="101" required>male
+      </label>
+         <label form="102">
+       <input type="radio" name ="Gender"value="Female" id="101" required>female
+      </label>
+     </p> 
+
+        <p>
+           <b>* Contact Information:</b>
+        </p>
+              &nbsp;&nbsp;&nbsp;Email:
+                 <input type="Email" name ="Email" placeholder="   " size="60" required>
+       
+
+      <p>
+         &nbsp;&nbsp;&nbsp;Phone:
+          <input type="number" name="Phone" placeholder ="  " size="30" required><br>
+      </p>
+
+
+    <p>
+      <b>* Parents/guardian Details:</b>
+    <p>
+    <p>  
+        <input type="text" name="Guardianname " placeholder =" Guardian name " size="80" required> <br>
+    </p> 
+    <p>
+        <input type="number" name="ContactNumber" placeholder =" Contact Number" size="80" required><br>
+    </p>
+    <p>
+        <input type="text" name="RelationwithStudent" placeholder ="Relation with Student" size="80" required>
+    </p>
+       
+
+    <p>
+       <b>* Emergency Contact Number:</b>
+    </p>
+    <p>
+      <input type="text" name="Emergencyname" placeholder =" Emergency name " size="80" required> <br>
+    </p>
+    <p>
+      <input type="number" name="PhoneNumber" placeholder =" Phone Number  " size="80" required><br>
+    </p>
+
+    <p>
+      <b><h3>* Education Details:</h3></b>
+    </p>
+       <p>
+         <input type="text" name="LastQualification" placeholder =" Last Qualification(10th/12th/Degree) " size="80" required> <br>
+      </p>
+       <p>
+        <input type="text" name="Passingyear" placeholder =" Passing year " size="80" required> <br>
+      </p>
+      <p>
+        <input type="text" name="Percentage" placeholder =" Percentage" size="80" required> <br>
+      </p>
+
+      <p>
+         <b>* Course Preferences:</b>
+           &nbsp;Course Type:
+            <select name ="CourseType" required>
+                <option value="Basic">----select Course----</option>
+                <option value="Basic">Basic</option>
+                <option value="Advanced">Advanced</option>
+            </select>
+        </p>
+        
+        
+        <p>
+          <b>* Preferred Batch Timing:</b>
+        
+            &nbsp;Batch Time:
+              <label for="Batch Time" name ="BatchTime"></label required>
+            <select id="Batch time"> 
+                  <option value="">----Select Time-----</option>
+                  <option value="Morning">Morning</option>
+                  <option value="Evening">Evening</option>
+            </select>
+          </p>
+          
+          
+        <p>
+          <b>* Address:</b><br>
+        </p>
+            <input type="text" name ="StreetAddress " placeholder =" Street Address " size="80" required>
+     
+        <p>
+          <input type="text" name="PinCode" placeholder=" Pin Code " size="80" required> <br></p>
+        </p>
+           <label for="City" required><b>&nbsp;&nbsp;City:</b></label>
+              <select id="city" name="city"> 
+                  <option value="">--Select city--</option>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Nagpur">Nagpur</option>
+                  <option value="Pune">Pune</option>
+                  <option value="Nashik">Nashik</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Hydrabad">Hydrabad</option>
+                  <option value="chennai">chennai</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Ahmedabad">Hydeabad</option>
+              </select>&nbsp;&nbsp;
+
+
+            <label for="State" required><b>State:</b></label>
+              <select id="State" name="State"> >
+                  <option value="">---Select State---</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Chandigarh">Chandigarh</option>
+              </select>&nbsp;&nbsp;
+      
+          <label for="Country" required><b>Country:</b></label>
+              <select id="Country" name="Country" > 
+                 <option value="">--Select Country--</option>
+                 <option value="India">India</option></select>
+          <br>
+
+
+     
+
+
+      <p>
+         <b>* School:</b>
+        
+         <select name="School" required>
+            <option value="school">&nbsp;&nbsp;&nbsp;----Select School----</option>   
+            <option value="SOET">School of engineering and Technology </option>
+            <option value="SOEM"> School of Pharmacy </option>
+            <option value="Pharmacy">  School of Agriculure Science</option>
+            <option value="march">  School of Commerce and Management</option>
+            <option value="april"> School of Science </option>
+            <option value="may"> School of Arts,Humanities and Social Science </option>
+            <option value="june">School of Computer Application  </option>
+            <option value="july"> School of Education </option>
+      
+          </select> &nbsp;&nbsp;<input type="text" placeholder=" Course " size="20" required>&nbsp;&nbsp;<select name="">
+            <option value=""name="Studyingyear">Studying year</option>
+            <option value=""> 1st</option>
+            <option value=""> 2nd</option>
+            <option value=""> 3rd</option>
+            <option value=""> 4th</option></select>
+        </p>  
+        
+        
+      <p>
+          <b><h3>* Payment Details:</b></h3>
+      </p>
+        <label form="101" required>
+          <input type="radio"value="male" name="class"id="101" >UPI
+        </label><label form="102">
+          <input type="radio"value="Female" name="class"id="101">Cash
+        </label>
+      <label form="102">
+            <input type="radio"value="Female" name="class"id="101">Card
+      </label>
+
+
+    <p>
+      <b>* Extra Details</Details></b>(optional)<b>:</b>
+          <label form="103" name="ExtraDetails" required>
+             <input type="radio"value="Hostel Required" name="class"id="103">Hostel Required
+          </label><label form="104">
+             <input type="radio"value="Transport required" name="class"id="104">Transport required
+          </label>
+    </p>      
+
+
+  <p>
+      <b>* Blood Group:</b>
+         <select name="Blood Group" required>
+            <option value="Select Blood Group">--Select Blood Group--</option>
+            <option value="A+">A+ </option>
+            <option value="A-"> A- </option>
+            <option value="B+"> B+ </option>
+            <option value="B-">  B-</option>
+            <option value="AB+"> AB+ </option>
+            <option value="AB-"> AB- </option>
+            <option value="O+"> O+ </option>
+            <option value="0-"> O-</option>
+        </select>
+  </p>
+
+
+  <p>
+     <b>* Terms and Conditions:</b><br></p>
+     1. The student must maintain at least 80% attendance during the training program.<br>
+     2. Any misconduct,misuse of resources or violation of code of conduct may lead to cancellation of registration.<br>
+      <input type = "checkbox" value="" size="1" id="101" required>i agree to terms and conditions
+    </label>
+  </p>
+
+
+  <p>
+     <button id="sub">Submit
+     </button>
+
+     <button id="reset">Reset
+     </button><br>
+  </p>
+   </div>
+  </form> 
+
+     <span id="success"></span>
+  
+</form>
+</body>
+</html>
