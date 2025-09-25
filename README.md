@@ -7,4 +7,4 @@ Simple registration form using HTML, CSS, PHP and MySQL.
 2. Start Apache & MySQL.
 3. Import registration.sql in phpMyAdmin.
 4. Update config.php with your DB credentials.
-5. Open http://localhost/your-folder-name/
+
